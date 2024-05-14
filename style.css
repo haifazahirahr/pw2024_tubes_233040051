@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(74, 98, 122);
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  align-items: center;
+}
+
+.container h1,
+h2 {
+  padding-top: 5rem;
+  text-align: center;
+}
