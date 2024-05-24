@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
 require 'functions.php';
 
 $id = $_GET["id"];
@@ -37,11 +43,14 @@ if (isset($_POST["submit"])) {
     <div class="container col-8">
         <h1>Edit Data!</h1>
 
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= $sklh["id"]; ?>">
+            <input type="hidden" name="gambarLama" value="<?= $sklh["gambar"]; ?>">
+
             <div class="mb-3">
                 <label for="gambar" class="form-label">Gambar</label>
-                <input type="file" class="form-control" id="gambar" name="gambar" required value="<?= $sklh["gambar"]; ?>">
+                <img src="img/<?= $sklh['gambar'];  ?>" width="40px" height="40px">
+                <input type="file" class="form-control" id="gambar" name="gambar">
             </div>
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>

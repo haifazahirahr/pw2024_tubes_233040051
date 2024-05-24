@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
 require 'functions.php';
 
 if (isset($_POST["submit"])) {
@@ -34,21 +40,21 @@ if (isset($_POST["submit"])) {
     <div class="container col-8">
         <h1>Tambah Data!</h1>
 
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="gambar" class="form-label">Gambar</label>
+                <label for="gambar" class="form-label" enquired>Gambar</label>
                 <input type="file" class="form-control" id="gambar" name="gambar" required>
             </div>
             <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
+                <label for="nama" class="form-label" enquired>Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" required>
             </div>
             <div class="mb-3">
-                <label for="alamat" class="form-label">Alamat</label>
+                <label for="alamat" class="form-label" enquired>Alamat</label>
                 <input type="text" class="form-control" id="alamat" name="alamat">
             </div>
             <div class="mb-3">
-                <label for="akreditasi" class="form-label">Akreditasi</label>
+                <label for="akreditasi" class="form-label" enquired>Akreditasi</label>
                 <input type="text" class="form-control" id="akreditasi" name="akreditasi">
             </div>
             <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
