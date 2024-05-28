@@ -20,15 +20,19 @@ function tambah($data)
     $nama = htmlspecialchars($data["nama"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $akreditasi = htmlspecialchars($data["akreditasi"]);
+    $instagram = htmlspecialchars($data["instagram"]);
+    $kategori_id = htmlspecialchars($data["kategori_id"]);
+
+
     $gambar = upload();
     if (!$gambar) {
         return false;
     }
 
-    $query = "INSERT INTO sma
-    VALUES
-    (NULL, '$gambar', '$nama', '$alamat', '$akreditasi')
+    $query = "INSERT INTO sma (id, gambar, nama, alamat, akreditasi, instagram, kategori_id) VALUES
+    (NULL, '$gambar', '$nama', '$alamat', '$akreditasi', '$instagram', '$kategori_id')
     ";
+
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
@@ -91,6 +95,7 @@ function ubah($data)
     $nama = htmlspecialchars($data["nama"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $akreditasi = htmlspecialchars($data["akreditasi"]);
+    $instagram = htmlspecialchars($data["instagram"]);
 
     if ($_FILES['gambar']['error'] === 4) {
         $gambar = $gambarLama;
@@ -104,6 +109,7 @@ function ubah($data)
     nama = '$nama',
     alamat = '$alamat',
     akreditasi = '$akreditasi'
+    instagram = '$instagram'
     WHERE id = $id
     ";
     mysqli_query($conn, $query);
@@ -117,7 +123,8 @@ function cari($keyword)
     WHERE
     nama LIKE '%$keyword%'OR
     alamat LIKE '%$keyword%'OR
-    akreditasi LIKE '%$keyword%'
+    akreditasi LIKE '%$keyword%'OR
+    instagram LIKE '%$keyword%'
     ";
 
     return query($query);

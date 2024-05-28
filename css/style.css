@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(74, 98, 122);
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1,
+h2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+body {
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
+}
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #bdd5e2;
+}
+
+#About {
+  background-color: rgb(74, 98, 122);
+  margin-top: 0.5px;
+  justify-content: center;
+}
+
+#Kategori {
+  background-color: #bdd5e2;
+}
+
+#SMA {
+  background-color: rgb(74, 98, 122);
+  justify-content: center;
+}
+
+footer {
+  background-color: #bdd5e2;
+}
+section {
+  padding-top: 8rem;
+}

@@ -57,6 +57,17 @@ if (isset($_POST["submit"])) {
                 <label for="akreditasi" class="form-label" enquired>Akreditasi</label>
                 <input type="text" class="form-control" id="akreditasi" name="akreditasi">
             </div>
+            <div class="mb-3">
+                <label for="instagram" class="form-label" enquired>Instagram</label>
+                <input type="text" class="form-control" id="instagram" name="instagram">
+            </div>
+            <div class="mb-3">
+                <label for="kategori_id" class="form-label">Kategori</label>
+                <select name="kategori_id" id="kategori_id" class="form-control">
+                    <option value="1">Negeri</option>
+                    <option value="2">Swasta</option>
+                </select>
+            </div>
             <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
         </form>
 
