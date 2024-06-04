@@ -49,7 +49,7 @@ if (isset($_POST["submit"])) {
 
             <div class="mb-3">
                 <label for="gambar" class="form-label">Gambar</label>
-                <img src="img/<?= $sklh['gambar'];  ?>" width="40px" height="40px">
+                <img src="img/<?= $sklh['gambar'];  ?>" width="100" height="100" style="padding-bottom: 1rem;">
                 <input type="file" class="form-control" id="gambar" name="gambar">
             </div>
             <div class="mb-3">

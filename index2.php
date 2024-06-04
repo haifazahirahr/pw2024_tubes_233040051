@@ -178,7 +178,7 @@ if (isset($_POST["cari"])) {
         <footer class="text-white text-center pb-5">
             <p>
                 Created with <i class="bi bi-heart-fill"></i> by
-                <a href="https://www.instagram.com/haifazahirah_/" class="text-white fw-bold">Haifa Zahirah Ramdhan</a>
+                <a href="https://www.instagram.com/haifazahirah_/" class="text-white fw-bold" target="_blank">Haifa Zahirah Ramdhan</a>
             </p>
         </footer>
         <!-- Akhir Footer -->

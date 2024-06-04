@@ -102,7 +102,7 @@ if (isset($_POST["submit"])) {
 
 
     <div class="container">
-        <div class="card text-center mb-3" style="width: 20rem; height: 15rem;">
+        <div class="card text-center mb-3" style="width: 20rem; height: 17rem;">
             <form action="" method="post">
                 <div class="card">
                     <h5 class="card-title">Login Admin</h5>

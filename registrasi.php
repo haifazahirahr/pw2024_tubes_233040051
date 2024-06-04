@@ -6,6 +6,7 @@ if (isset($_POST["register"])) {
         echo "
         <script>
             alert('user baru berhasil ditambahkan!');
+            document.location.href='login.php'
         </script>
         ";
     } else {
@@ -98,24 +99,6 @@ if (isset($_POST["register"])) {
             </form>
         </div>
     </div>
-    <!-- <div class="container">
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <label for="username">username :</label>
-                    <input type="text" name="username" id="username">
-                </li>
-                <li>
-                    <label for="password">password :</label>
-                    <input type="password" name="password" id="password">
-                </li>
-                <li>
-                    <label for="password2">konfirmasi password :</label>
-                    <input type="password" name="password2" id="password">
-                </li>
-                <button type="submit" name="register">Register!</button>
-            </ul>
-        </form> -->
 </body>
 
 </html>
