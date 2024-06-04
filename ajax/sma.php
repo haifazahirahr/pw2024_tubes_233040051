@@ -34,8 +34,8 @@ $sma = query($query);
                 <td><?= $row['alamat']; ?></td>
                 <td><?= $row['akreditasi']; ?></td>
                 <td>
-
-                    <a href="ubah.php?id=<?= $row["id"]; ?>" class="badge text-bg-warning text-decoration-none">ubah</a> <a href="hapus.php?id=<?= $row["id"]; ?>" class="badge text-bg-danger text-decoration-none" onclick="return confirm('yakin ingin menghapus data?')">hapus</a>
+                    <a href="ubah.php?id=<?= $row["id"]; ?>" class="badge text-bg-warning text-decoration-none">ubah</a>
+                    <a href="hapus.php?id=<?= $row["id"]; ?>" class="badge text-bg-danger text-decoration-none" onclick="return confirm('yakin ingin menghapus data?')">hapus</a>
                 </td>
             </tr>
             <?php $i++; ?>

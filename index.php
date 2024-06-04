@@ -22,6 +22,16 @@ if (isset($_POST["cari"])) {
     <title>SMA Di Purwakarta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media print {
+
+            .logout,
+            .navbar,
+            .aksi {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -37,6 +47,24 @@ if (isset($_POST["cari"])) {
                     <li class="nav-item">
                         <a href="tambah.php" class="btn btn-primary">Tambah data SMA</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cetak.php" target="_blank">Cetak</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                    </li>
+                    <li><a class="dropdown-item" href="index2.php">Halaman user</a>
+                    </li>
+                    <li><a class="dropdown-item" href="login.php">login</a>
+                    </li>
+                </ul>
+                </li>
                 </ul>
                 <form action="" method="post" class="d-flex" role="search">
                     <input type="text" name="keyword" autofocus class="form-control me-2" placeholder="Search..." autocomplete="off" aria-label="Search" id="keyword">
@@ -50,7 +78,7 @@ if (isset($_POST["cari"])) {
         <h1>SMA Purwakarta</h1>
 
 
-        <a href="logout.php" class="btn btn-danger">Logout</a>
+        <a href="logout.php" class="logout btn btn-danger">Logout</a>
         <br><br>
         <div id="container">
 
@@ -76,7 +104,7 @@ if (isset($_POST["cari"])) {
                             <td><?= $row['alamat']; ?></td>
                             <td><?= $row['akreditasi']; ?></td>
                             <td><?= $row['instagram']; ?></td>
-                            <td>
+                            <td class="aksi">
 
                                 <a href="ubah.php?id=<?= $row["id"]; ?>" class="badge text-bg-warning text-decoration-none">ubah</a> <a href="hapus.php?id=<?= $row["id"]; ?>" class="badge text-bg-danger text-decoration-none" onclick="return confirm('yakin ingin menghapus data?')">hapus</a>
                             </td>

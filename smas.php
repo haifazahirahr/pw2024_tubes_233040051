@@ -30,7 +30,7 @@ if (isset($_POST["cari"])) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index2.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index2.php#Kategori">Kategori</a>
                     </li>
                     <form action="" method="post" class="d-flex" role="search">
                         <input type="text" name="keyword" autofocus class="form-control me-2" placeholder="Search..." autocomplete="off" aria-label="Search" id="keyword">

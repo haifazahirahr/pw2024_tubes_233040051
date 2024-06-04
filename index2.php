@@ -46,16 +46,12 @@ if (isset($_POST["cari"])) {
                             Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="login.php">login</a></li>
+                            <li><a class="dropdown-item" href="login.php">login</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
                 <form action="" method="post" class="d-flex" role="search">
@@ -120,7 +116,7 @@ if (isset($_POST["cari"])) {
         </div>
         <div class="row justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="img/SMAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Kategori</h5>
                     <p class="card-text">Sekolah Menengah Atas Negeri.</p>
@@ -128,7 +124,7 @@ if (isset($_POST["cari"])) {
                 </div>
             </div>
             <div class="card ms-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="img/SMAS.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Kategori</h5>
                     <p class="card-text">Sekolah Menengah Atas Swasta.</p>
@@ -143,31 +139,31 @@ if (isset($_POST["cari"])) {
 
         <!-- SMA -->
         <section id="SMA">
-            <div class="container">
+            <div class="container" id="container">
                 <div class="row fs-5 SMA">
                     <div class="col text-center">
                         <h2 class="SMA">Sekolah Menengah Atas</h2>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <?php foreach ($sma as $s) : ?>
-                    <div class="card mb-3" style="max-width: 1000px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/<?= $s['gambar']; ?>" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><?= $s['nama']; ?></h5>
-                                    <p class="card-text"><?= $s['alamat']; ?></p>
-                                    <p class="card-text">akreditasi: <?= $s['akreditasi']; ?></p>
-                                    <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link">instagram</a></p>
+                <div class="row justify-content-center">
+                    <?php foreach ($sma as $s) : ?>
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/<?= $s['gambar']; ?>" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?= $s['nama']; ?></h5>
+                                        <p class="card-text"><?= $s['alamat']; ?></p>
+                                        <p class="card-text">akreditasi: <?= $s['akreditasi']; ?></p>
+                                        <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link" target="_blank">instagram</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="rgb(74, 98, 122)" fill-opacity="1" d="M0,32L48,64C96,96,192,160,288,186.7C384,213,480,203,576,170.7C672,139,768,85,864,85.3C960,85,1056,139,1152,149.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>

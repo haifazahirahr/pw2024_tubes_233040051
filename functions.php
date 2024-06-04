@@ -96,6 +96,7 @@ function ubah($data)
     $alamat = htmlspecialchars($data["alamat"]);
     $akreditasi = htmlspecialchars($data["akreditasi"]);
     $instagram = htmlspecialchars($data["instagram"]);
+    $kategori_id = htmlspecialchars($data["kategori_id"]);
 
     if ($_FILES['gambar']['error'] === 4) {
         $gambar = $gambarLama;
@@ -108,8 +109,9 @@ function ubah($data)
     gambar = '$gambar',
     nama = '$nama',
     alamat = '$alamat',
-    akreditasi = '$akreditasi'
-    instagram = '$instagram'
+    akreditasi = '$akreditasi',
+    instagram = '$instagram',
+    kategori_id = '$kategori_id'
     WHERE id = $id
     ";
     mysqli_query($conn, $query);

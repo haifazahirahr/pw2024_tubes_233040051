@@ -30,7 +30,7 @@ if (isset($_POST["register"])) {
 
         body {
             text-align: center;
-            background-color: grey;
+            background-color: lightslategray;
         }
 
         h1,
@@ -59,6 +59,7 @@ if (isset($_POST["register"])) {
             justify-content: center;
             align-items: center;
             height: 40vh;
+            padding-top: 50px;
         }
 
         .card {
@@ -70,7 +71,7 @@ if (isset($_POST["register"])) {
 <body>
     <h1 class="text-center">Halaman Registrasi</h1>
     <div class="container">
-        <div class="card text-center mb-3" style="width: 30rem; height: 18rem;">
+        <div class="card text-center mb-3" style="width: 30rem; height: 20rem;">
             <form action="" method="post">
                 <div class="card">
                     <h5 class="card-title">Registrasi</h5>

@@ -60,7 +60,6 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             text-align: center;
@@ -103,7 +102,7 @@ if (isset($_POST["submit"])) {
 
 
     <div class="container">
-        <div class="card text-center mb-3" style="width: 30rem; height: 15rem;">
+        <div class="card text-center mb-3" style="width: 20rem; height: 15rem;">
             <form action="" method="post">
                 <div class="card">
                     <h5 class="card-title">Login Admin</h5>
