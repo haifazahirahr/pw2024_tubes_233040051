@@ -94,11 +94,14 @@ if (isset($_POST["register"])) {
                     <input type="password" name="password2" id="password">
                 </div>
                 <div class="input">
-                    <button type="submit" name="register" class="btn btn-primary">Register</button>
+                    <button type="submit" name="register" class="btn btn-primary mb-3">Register</button>
                 </div>
             </form>
+            <p>you have an account! <a href="login.php">Login</a></p>
         </div>
+
     </div>
+
 </body>
 
 </html>

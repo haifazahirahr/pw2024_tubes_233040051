@@ -62,8 +62,6 @@ if (isset($_POST["cari"])) {
                     </li>
                     <li><a class="dropdown-item" href="index2.php" target="_blank">Halaman user</a>
                     </li>
-                    <li><a class="dropdown-item" href="login.php">login</a>
-                    </li>
                 </ul>
                 </li>
                 </ul>

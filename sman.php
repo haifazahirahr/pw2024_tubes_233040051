@@ -32,10 +32,6 @@ if (isset($_POST["cari"])) {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index2.php#Kategori">Kategori</a>
                     </li>
-                    <form action="" method="post" class="d-flex" role="search">
-                        <input type="text" name="keyword" autofocus class="form-control me-2" placeholder="Search..." autocomplete="off" aria-label="Search" id="keyword">
-                        <button class="btn btn-outline-success" type="submit" name="cari" id="tombol-cari">Search</button>
-                    </form>
             </div>
         </div>
     </nav>
