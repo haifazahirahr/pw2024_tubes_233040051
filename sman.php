@@ -43,10 +43,10 @@ if (isset($_POST["cari"])) {
     <!-- Akhir Navbar -->
     <!-- SMA -->
     <section id="SMA">
-        <div class="container">
+        <div class="container" id="container">
             <div class="row fs-5 SMA">
                 <div class="col text-center">
-                    <h2 class="SMA">Sekolah Menengah Atas</h2>
+                    <h2 class="SMA">Sekolah Menengah Atas Negeri</h2>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ if (isset($_POST["cari"])) {
                                 <h5 class="card-title"><?= $s['nama']; ?></h5>
                                 <p class="card-text"><?= $s['alamat']; ?></p>
                                 <p class="card-text">akreditasi: <?= $s['akreditasi']; ?></p>
-                                <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link" style="text-decoration: none;">instagram</a></p>
+                                <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link">instagram</a></p>
                             </div>
                         </div>
                     </div>
@@ -71,5 +71,5 @@ if (isset($_POST["cari"])) {
         </div>
     </section>
     <!-- Akhir SMA -->
-
+    <script src="js/script3.js"></script>
 </body>

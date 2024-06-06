@@ -43,7 +43,7 @@ if (isset($_POST["cari"])) {
     <!-- Akhir Navbar -->
     <!-- SMA -->
     <section id="SMA">
-        <div class="container">
+        <div class="container" id="container">
             <div class="row fs-5 SMA">
                 <div class="col text-center">
                     <h2 class="SMA">Sekolah Menengah Atas Swasta</h2>
@@ -71,5 +71,7 @@ if (isset($_POST["cari"])) {
         </div>
     </section>
     <!-- Akhir SMA -->
+
+    <script src="js/script4.js"></script>
 
 </body>

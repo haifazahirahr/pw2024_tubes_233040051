@@ -6,9 +6,9 @@ $keyword = $_GET["keyword"];
 
 $query = "SELECT * FROM sma
 WHERE
-nama LIKE '%$keyword%'OR
+(nama LIKE '%$keyword%'OR
 alamat LIKE '%$keyword%'OR
-akreditasi LIKE '%$keyword%'
+akreditasi LIKE '%$keyword%')
 ";
 $sma = query($query);
 ?>

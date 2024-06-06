@@ -43,7 +43,7 @@ if (isset($_POST["cari"])) {
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Lainnya
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -118,7 +118,7 @@ if (isset($_POST["cari"])) {
             <div class="card" style="width: 18rem;">
                 <img src="img/SMAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Kategori</h5>
+                    <h5 class="card-title">Negeri</h5>
                     <p class="card-text">Sekolah Menengah Atas Negeri.</p>
                     <a href="sman.php" class="btn btn-primary">SMAN</a>
                 </div>
@@ -126,7 +126,7 @@ if (isset($_POST["cari"])) {
             <div class="card ms-2" style="width: 18rem;">
                 <img src="img/SMAS.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Kategori</h5>
+                    <h5 class="card-title">Swasta</h5>
                     <p class="card-text">Sekolah Menengah Atas Swasta.</p>
                     <a href="smas.php" class="btn btn-primary">SMAS</a>
                 </div>

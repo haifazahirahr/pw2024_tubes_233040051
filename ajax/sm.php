@@ -7,15 +7,17 @@ $query = "SELECT * FROM sma
             WHERE (nama
             LIKE '%$keyword%' OR
             alamat LIKE '%$keyword%' OR
-            akreditasi LIKE '%$keyword%')
+            akreditasi LIKE '%$keyword%') AND
+            kategori_id = 2
         ";
 $sma = query($query);
 ?>
 
 <div class="row fs-5 SMA">
     <div class="col text-center">
-        <h2 class="SMA">Sekolah Menengah Atas</h2>
+        <h2 class="SMA">Sekolah Menengah Atas Swasta</h2>
     </div>
+</div>
 </div>
 <div class="row justify-content-center">
     <?php foreach ($sma as $s) : ?>
@@ -28,7 +30,7 @@ $sma = query($query);
                     <div class="card-body">
                         <h5 class="card-title"><?= $s['nama']; ?></h5>
                         <p class="card-text"><?= $s['alamat']; ?></p>
-                        <p class="card-text"><?= $s['akreditasi']; ?></p>
+                        <p class="card-text">akreditasi: <?= $s['akreditasi']; ?></p>
                         <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link">instagram</a></p>
                     </div>
                 </div>

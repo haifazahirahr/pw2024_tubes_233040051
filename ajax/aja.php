@@ -3,18 +3,21 @@ require '../functions.php';
 
 $keyword = $_GET["keyword"];
 
-$query = "SELECT * FROM sma
-            WHERE (nama
-            LIKE '%$keyword%' OR
-            alamat LIKE '%$keyword%' OR
-            akreditasi LIKE '%$keyword%')
-        ";
+$query = "SELECT * FROM sma WHERE nama LIKE '%$keyword%' OR alamat LIKE '%$keyword%' OR akreditasi LIKE '%$keyword%' AND kategori_id = 1";
+
+// Pastikan hanya satu sekolah yang ditampilkan
+$query .= " LIMIT 1";
+
 $sma = query($query);
+
+// Kembalikan hasil dalam format JSON
+echo json_encode($sma);
 ?>
+
 
 <div class="row fs-5 SMA">
     <div class="col text-center">
-        <h2 class="SMA">Sekolah Menengah Atas</h2>
+        <h2 class="SMA">Sekolah Menengah Atas Negeri</h2>
     </div>
 </div>
 <div class="row justify-content-center">

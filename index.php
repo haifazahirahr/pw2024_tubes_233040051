@@ -7,7 +7,8 @@ if (!isset($_SESSION["login"])) {
 }
 
 require 'functions.php';
-$sma = query("SELECT * FROM sma");
+$sma = query("SELECT a.*, b.nama AS nama_kategori FROM sma a JOIN kategori b ON a.kategori_id=b.id");
+$kategori = query("SELECT * FROM kategori");
 if (isset($_POST["cari"])) {
     $sma = cari($_POST["keyword"]);
 }
@@ -52,14 +53,14 @@ if (isset($_POST["cari"])) {
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Lainnya
                         </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                     </li>
-                    <li><a class="dropdown-item" href="index2.php">Halaman user</a>
+                    <li><a class="dropdown-item" href="index2.php" target="_blank">Halaman user</a>
                     </li>
                     <li><a class="dropdown-item" href="login.php">login</a>
                     </li>
@@ -89,6 +90,7 @@ if (isset($_POST["cari"])) {
                     <th scope="col">Nama</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Akreditasi</th>
+                    <th scope="col">Kategori</th>
                     <th scope="col">Instagram</th>
                     <th scope="col">Aksi</th>
                 </tr>
@@ -103,6 +105,7 @@ if (isset($_POST["cari"])) {
                             <td><?= $row['nama']; ?></td>
                             <td><?= $row['alamat']; ?></td>
                             <td><?= $row['akreditasi']; ?></td>
+                            <td><?= $row['nama_kategori']; ?></td>
                             <td><?= $row['instagram']; ?></td>
                             <td class="aksi">
 
