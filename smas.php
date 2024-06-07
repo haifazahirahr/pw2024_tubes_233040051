@@ -58,7 +58,7 @@ if (isset($_POST["cari"])) {
                                 <h5 class="card-title"><?= $s['nama']; ?></h5>
                                 <p class="card-text"><?= $s['alamat']; ?></p>
                                 <p class="card-text">akreditasi: <?= $s['akreditasi']; ?></p>
-                                <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link">instagram</a></p>
+                                <p class="card-text"><a href="<?= $s['instagram']; ?>" class="card-link" target="_blank">instagram</a></p>
                             </div>
                         </div>
                     </div>
